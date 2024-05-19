@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:padding="16dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_cart_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/text_view_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价: ¥0.00"
+            android:textSize="18sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结账"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button_remove_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="移除所有商品"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</FrameLayout>
+
+

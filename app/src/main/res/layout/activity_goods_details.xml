@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E1E1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pic1" />
+
+        <RelativeLayout
+            android:id="@+id/details_basic_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_image"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="雪纺印花百皱裙半身裙,简约的线条和版型看上去很好看,整体更有看点"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_name"
+                android:layout_marginStart="10dp"
+                android:text="¥ 115"
+                android:textColor="#FF0000"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/details_normal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_price"
+                android:layout_margin="10dp"
+                android:text="原价：¥ 150"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_postage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_normal_price"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="快递 免邮费"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_monthly_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_normal_price"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/details_postage"
+                android:text="月销62笔"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_normal_price"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/details_monthly_sales"
+                android:text="辽宁鞍山"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_select_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_basic_information"
+            android:layout_marginTop="10dp"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="选择颜色分类"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/details_evaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_select_category"
+            android:layout_marginTop="10dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/details_evaluate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="宝贝评价（1）"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/details_evaluate_first_user_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/details_evaluate_number"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/details_evaluate_first_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/details_evaluate_number"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/details_evaluate_first_user_icon"
+                android:gravity="center_vertical"
+                android:text="shfy*kj"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_evaluate_first_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_evaluate_first_user_icon"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="面料手感很不错，做工也精细，款式很修身，上档次，试穿了下，穿着很舒服，洗完后和新的一样，我很喜欢这件衣服"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/details_evaluate_first_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_evaluate_first_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="2015-06-01"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/details_evaluate_first_time"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="查看更多评论"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
